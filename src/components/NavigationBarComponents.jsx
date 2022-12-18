@@ -6,8 +6,8 @@ export const NavigationContainer = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     z-index: 10;
     position: sticky;
     top: 0;
@@ -18,7 +18,7 @@ export const NavigationContainer = styled.header`
 export const NavBarExtendedContainer = styled.div`
     font-family: 'Space Mono', monospace;
     position: absolute;
-    top: 100px;
+    top: 70px;
     left: 0;
     height: calc(100vh - 60px);
     width: 100%;
