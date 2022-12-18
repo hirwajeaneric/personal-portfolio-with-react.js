@@ -7,6 +7,7 @@ export const MainPageContainer = styled.main`
     justify-content: center;
     align-items: center;
     background: black;
+    width: 100%;
 
     @media (max-width: 1920px) {
         
@@ -24,4 +25,3 @@ export const MainPageContainer = styled.main`
         
     }
 `;
-
