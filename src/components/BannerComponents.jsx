@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const BannerContainer = styled.section`
-    padding: 2em 9em 0em;
+    padding: 6em 0em;
     background: black;
     dispay: flex;
     flex-direction: column;

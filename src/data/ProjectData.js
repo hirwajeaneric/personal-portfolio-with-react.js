@@ -10,7 +10,8 @@ const projects = [
         technologies: ['React', 'Node', 'Express', 'MongoDB', 'Multer', 'JWT'],
         repositoryLink: 'https://github.com/hirwajeaneric/online-house-cost-sharing-system',
         previewLink: '',
-        imageAddress: 'https://github.com/hirwajeaneric/online-house-cost-sharing-system/blob/main/pictures/houseonline-8.png'
+        imageAddress: 'houseonline-8.png',
+        alt: 'online-house-cost-sharing-system'
     },
     {
         type: 'Web app',
@@ -22,7 +23,9 @@ const projects = [
             share the rent price.`,
         technologies: ['React', 'Node', 'Express', 'MongoDB', 'Multer', 'JWT'],
         repositoryLink: 'https://github.com/hirwajeaneric/online-house-cost-sharing-system',
-        previewLink: ''
+        previewLink: '',
+        imageAddress: 'https://github.com/hirwajeaneric/online-house-cost-sharing-system/blob/main/pictures/houseonline-8.png',
+        alt: 'online-house-cost-sharing-system'
     },
     {
         type: 'Web app',
@@ -34,7 +37,9 @@ const projects = [
             share the rent price.`,
         technologies: ['React', 'Node', 'Express', 'MongoDB', 'Multer', 'JWT'],
         repositoryLink: 'https://github.com/hirwajeaneric/online-house-cost-sharing-system',
-        previewLink: ''
+        previewLink: '',
+        imageAddress: 'https://github.com/hirwajeaneric/online-house-cost-sharing-system/blob/main/pictures/houseonline-8.png',
+        alt: 'online-house-cost-sharing-system'
     },
     {
         type: 'Web app',
@@ -46,7 +51,9 @@ const projects = [
             share the rent price.`,
         technologies: ['React', 'Node', 'Express', 'MongoDB', 'Multer', 'JWT'],
         repositoryLink: 'https://github.com/hirwajeaneric/online-house-cost-sharing-system',
-        previewLink: ''
+        previewLink: '',
+        imageAddress: 'https://github.com/hirwajeaneric/online-house-cost-sharing-system/blob/main/pictures/houseonline-8.png?raw=true',
+        alt: 'online-house-cost-sharing-system'
     },
 ]
 
