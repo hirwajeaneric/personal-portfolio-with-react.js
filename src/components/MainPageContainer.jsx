@@ -10,7 +10,7 @@ export const MainPageContainer = styled.main`
     width: 100%;
 
     @media (max-width: 1920px) {
-        
+        // width: 100%;
     }
 
     @media (max-width: 1080px) {
