@@ -8,7 +8,7 @@ export const NavigationContainer = styled.header`
     justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 10px;
-    z-index: 10;
+    z-index: 20;
     position: fixed;
     top: 0;
     width: 100%;

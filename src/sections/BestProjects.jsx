@@ -12,6 +12,16 @@ const BestProjects = () => {
     setProjects(myProjects)
   },[projects]);
 
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovering(false);
+  };
+
   return (
     <ProjectsSectionContainer>
       <ElementsContainer>
@@ -23,8 +33,19 @@ containing its own case study.
         <ProjectContainer>
           {projects && projects.map((project,index) => (
             <AProject>
-              <ImageSpace>
-                <img src={project.imageAddress} alt={project.alt} />
+              <ImageSpace 
+                href={`${project.repositoryLink}`} target='_blank' rel="noreferrer"
+                className='image-space'
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                style={{
+                  background: `url(${project.imageAddress}), rgba(204, 230, 255, 1)`, 
+                  backgroundRepeat: 'no-repeat',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundBlendMode: isHovering ? 'normal' : 'multiply',
+                  cursor: 'pointer',
+                }}>
               </ImageSpace>
               <DetailsSpace>
                 <ProjectType>{project.type}</ProjectType>

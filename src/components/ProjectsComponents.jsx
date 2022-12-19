@@ -87,7 +87,7 @@ export const SectionTagLine = styled.p`
     width: 50%;
     text-align: center;
     line-height: 1.7rem;
-    margin: 1rem auto 2rem;
+    margin: 1rem auto 4rem;
 
     @media (max-width: 1920px) {
         
@@ -121,24 +121,52 @@ export const AProject = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     position: relative;
+
+    @media (min-width: 1920px) {
+        width: 85%;
+    }
+
+    @media (max-width: 1366px) {
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 480px) {
+        
+    } 
 `;
 
-export const ImageSpace = styled.div`
+export const ImageSpace = styled.a`
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 70%;
     z-index: 8;
-    height: 20rem;
+    height: 24rem;
     background: gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    img {
-        height: 100%;
+    @media (min-width: 1920px) {
+        
+    }
+
+    @media (max-width: 1366px) {
+
+    }
+
+    @media (max-width: 768px) {
         width: 100%;
     }
+
+    @media (max-width: 480px) {
+        
+    } 
 `;
 
 export const DetailsSpace = styled.div`
@@ -148,6 +176,22 @@ export const DetailsSpace = styled.div`
     align-items: flex-end;
     width: 50%;
     z-index: 10;
+
+    @media (min-width: 1920px) {
+        
+    }
+
+    @media (max-width: 1366px) {
+
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
+    @media (max-width: 480px) {
+        
+    } 
 `;
 
 export const ProjectType = styled.p`
@@ -169,6 +213,7 @@ export const ProjectDescription = styled.p`
     padding: 1rem;
     text-align: right;
     margin: -0rem 0rem 0rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
 
 export const UsedTechnologies = styled.ul`

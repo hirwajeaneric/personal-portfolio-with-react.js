@@ -11,7 +11,6 @@ export const BannerContainer = styled.section`
     justify-content: center;
     max-width: 1366px;
     font-size: 1.1em;
-    height: 100vh;
 
     @media (min-width: 1920px) {
         
@@ -22,11 +21,11 @@ export const BannerContainer = styled.section`
     }
 
     @media (max-width: 768px) {
-        padding: 1.5em 3em;
+        padding: 7em 3em;
     }
 
     @media (max-width: 480px) {
-        padding: 4em 1.5em;
+        padding: 6em 1.5em;
     }
 `;
 
@@ -80,10 +79,11 @@ export const WhatIDo = styled.h1`
     width: 60%;
     margin: 2rem auto 0;
     color: #79a6d2;
-    line-height: 2.5rem;
+    line-height: 3rem;
     
     @media (min-width: 1920px) {
         font-size: 2vw;
+        line-height: 3rem;
     }
 
     @media (min-width: 1366px) {
