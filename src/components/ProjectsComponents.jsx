@@ -1,4 +1,5 @@
 import styled from 'styled-components'; 
+import { Link } from 'react-router-dom';
 
 export const ProjectsSectionContainer = styled.section`
     dispay: flex;
@@ -237,4 +238,12 @@ export const ProjectsLinks = styled.div`
     a {
         color: white;
     }
+`;
+
+export const MoreProjectsButton = styled(Link)`
+   padding: 1rem;
+   backgroundColor: #33bbff;
+   color: white;
+   font-family: 'Space Mono', monospace;
+   tex-align: center;
 `;
