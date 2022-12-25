@@ -1,8 +1,15 @@
 import React from 'react'
+import { MainPageContainer } from '../components/MainPageContainer'
+import Footer from '../sections/Footer'
+import NavigationBar from '../sections/NavigationBar'
 
 const ContactMe = () => {
   return (
-    <div>ContactMe</div>
+    <MainPageContainer>
+    <NavigationBar />
+
+    <Footer/>
+  </MainPageContainer>
   )
 }
 

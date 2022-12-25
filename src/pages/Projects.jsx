@@ -1,8 +1,16 @@
 import React from 'react'
+import { MainPageContainer } from '../components/MainPageContainer'
+import AllProjects from '../sections/AllProjects';
+import Footer from '../sections/Footer'
+import NavigationBar from '../sections/NavigationBar'
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <MainPageContainer>
+    <NavigationBar />
+    <AllProjects />
+    <Footer />
+  </MainPageContainer>
   )
 }
 

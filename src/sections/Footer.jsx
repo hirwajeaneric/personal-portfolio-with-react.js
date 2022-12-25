@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaGithubAlt, FaNpm, FaPinterest } from 'react-icons/fa';
 import { FiInstagram, FiLinkedin } from 'react-icons/fi'
-import { ALink, BottomNavigation, BottomNavigationItem, ElementsContainer, FooterSectionContainer, SocialLinks } from '../components/FooterComponents'
+import { ALink, BottomNavigation, BottomNavigationItem, CopyRightText, ElementsContainer, FooterSectionContainer, SocialLinks, UnderLine } from '../components/FooterComponents'
 
 const Footer = () => {
   return (
@@ -30,6 +30,10 @@ const Footer = () => {
             <FaNpm/>
           </ALink> */}
         </SocialLinks>
+        <UnderLine />
+        <CopyRightText>
+          &copy; Copyright 2022 - All rights reserved to Hirwa Jean Eric - Created with Love.
+        </CopyRightText>
       </ElementsContainer>
     </FooterSectionContainer>
   )

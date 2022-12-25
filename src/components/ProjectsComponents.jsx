@@ -8,7 +8,6 @@ export const ProjectsSectionContainer = styled.section`
     justify-content: center;
     width: 100%;
     font-size: 1.1em;
-    // background: #cce6ff;
     background: #001a33;
     width: 100%;
     padding: 2rem 0rem 6rem;
@@ -18,15 +17,15 @@ export const ProjectsSectionContainer = styled.section`
     }
 
     @media (max-width: 1366px) {
-
+        padding: 2rem 0rem 3rem;
     }
 
     @media (max-width: 768px) {
-    
+        padding: 2rem 0rem 2rem;    
     }
 
     @media (max-width: 480px) {
-        
+        padding: 2rem 0rem 1rem;
     } 
 `;
 
@@ -48,11 +47,11 @@ export const ElementsContainer = styled.div`
     }
 
     @media (max-width: 768px) {
-    
+        width: 90%;
     }
 
     @media (max-width: 480px) {
-        
+        width: 90%;
     } 
 `;
 
@@ -79,7 +78,8 @@ export const SectionTitle = styled.h2`
 
     @media (max-width: 480px) {
         font-size: 2em;
-        margin: 0rem auto 0;
+        font-weight: 600;
+        margin: 2.5rem auto;
     }
 `;
 
@@ -89,6 +89,7 @@ export const SectionTagLine = styled.p`
     text-align: center;
     line-height: 1.7rem;
     margin: 1rem auto 4rem;
+    font-size: 1rem;
 
     @media (max-width: 1920px) {
         
@@ -103,7 +104,7 @@ export const SectionTagLine = styled.p`
     }
 
     @media (max-width: 480px) {
-        display: none;
+        // display: none;
     }
 `;
 
@@ -135,10 +136,11 @@ export const AProject = styled.div`
 
     @media (max-width: 768px) {
         flex-wrap: wrap;
+        margin-bottom: 4rem;  
     }
 
     @media (max-width: 480px) {
-        
+        margin-bottom: 3rem;  
     } 
 `;
 
@@ -166,7 +168,8 @@ export const ImageSpace = styled.a`
     }
 
     @media (max-width: 480px) {
-        
+        width: 100%;
+        height: 11rem;
     } 
 `;
 
@@ -215,6 +218,22 @@ export const ProjectDescription = styled.p`
     text-align: right;
     margin: -0rem 0rem 0rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    @media (min-width: 1920px) {
+        
+    }
+
+    @media (max-width: 1366px) {
+
+    }
+
+    @media (max-width: 768px) {
+        
+    }
+
+    @media (max-width: 480px) {
+      padding: 0.8rem;  
+    } 
 `;
 
 export const UsedTechnologies = styled.ul`
@@ -224,6 +243,7 @@ export const UsedTechnologies = styled.ul`
     align-items: center;
     padding: 0rem 0rem;
     width: 100%;
+    flex-wrap: wrap;
 `;
 
 export const TechName = styled.li`
@@ -235,7 +255,7 @@ export const TechName = styled.li`
 `;
 
 export const ProjectsLinks = styled.div`
-    
+    // margin-bottom: 4rem;
     a {
         color: white;
     }

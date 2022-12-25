@@ -77,7 +77,8 @@ export const BottomNavigation = styled.div`
     }
 
     @media (max-width: 480px) {
-        
+        width: 90%;
+        margin: 1rem auto;
     } 
 `;
 
@@ -112,7 +113,7 @@ export const SocialLinks = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 20%;
     margin: 3rem auto;
     font-size: 1.5rem; 
 
@@ -125,11 +126,12 @@ export const SocialLinks = styled.div`
     }
 
     @media (max-width: 768px) {
-        // flex-wrap: wrap;
+        width: 30%;
     }
 
     @media (max-width: 480px) {
-        
+        width: 40%;
+        margin: 2rem auto;
     } 
 `;
 
@@ -154,6 +156,52 @@ export const ALink = styled.a`
 
     @media (max-width: 480px) {
         
+    } 
+`;
+
+export const UnderLine = styled.div`
+    height: 0.1rem;
+    width: 60%;
+    margin: 0 auto;
+    background: #33bbff;
+
+    @media (min-width: 1920px) {
+        
+    }
+
+    @media (max-width: 1366px) {
+
+    }
+
+    @media (max-width: 768px) {
+        
+    }
+
+    @media (max-width: 480px) {
+        
+    } 
+`;
+
+export const CopyRightText = styled.p`
+    text-align: center;
+    padding: 3rem 0rem 1rem;
+    color: #cce6ff;
+    line-height: 1.5rem;
+
+    @media (min-width: 1920px) {
+        
+    }
+
+    @media (max-width: 1366px) {
+
+    }
+
+    @media (max-width: 768px) {
+        
+    }
+
+    @media (max-width: 480px) {
+        padding: 2rem 0rem 1rem;
     } 
 `;
 
