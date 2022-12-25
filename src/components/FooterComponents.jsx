@@ -7,7 +7,7 @@ export const FooterSectionContainer = styled.section`
     align-items: center;
     justify-content: center;
     width: 100%;
-    font-size: 1.1em;
+    font-size: 0.8em;
     background: black;
     width: 100%;
     padding: 2rem 0rem;
@@ -62,7 +62,7 @@ export const BottomNavigation = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 60%;
-    margin: 6rem auto;
+    margin: 4rem auto;
 
     @media (min-width: 1920px) {
         // width: 85%;
@@ -109,6 +109,7 @@ export const SocialLinks = styled.div`
     align-items: center;
     width: 50%;
     margin: 3rem auto;
+    font-size: 1.5rem; 
 
     @media (min-width: 1920px) {
         // width: 85%;

@@ -11,7 +11,7 @@ export const ProjectsSectionContainer = styled.section`
     // background: #cce6ff;
     background: #001a33;
     width: 100%;
-    padding: 2rem 0rem;
+    padding: 2rem 0rem 6rem;
 
     @media (min-width: 1920px) {
         
@@ -235,6 +235,7 @@ export const TechName = styled.li`
 `;
 
 export const ProjectsLinks = styled.div`
+    
     a {
         color: white;
     }
