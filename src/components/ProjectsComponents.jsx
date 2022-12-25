@@ -11,7 +11,7 @@ export const ProjectsSectionContainer = styled.section`
     // background: #cce6ff;
     background: #001a33;
     width: 100%;
-    padding: 2rem 0rem;
+    padding: 2rem 0rem 6rem;
 
     @media (min-width: 1920px) {
         
@@ -30,7 +30,7 @@ export const ProjectsSectionContainer = styled.section`
     } 
 `;
 
-export const ElementsContainer = styled.section`
+export const ElementsContainer = styled.div`
     dispay: flex;
     flex-direction: column;
     align-items: center;
@@ -235,15 +235,22 @@ export const TechName = styled.li`
 `;
 
 export const ProjectsLinks = styled.div`
+    
     a {
         color: white;
     }
 `;
 
 export const MoreProjectsButton = styled(Link)`
-   padding: 1rem;
-   backgroundColor: #33bbff;
+   padding: 0.7rem 1rem;
+   text-decoration: none;
+   border: .14rem solid #004280;
    color: white;
    font-family: 'Space Mono', monospace;
    tex-align: center;
+   font-size: 1rem;
+
+   &:hover {
+    background: #004280;
+   }
 `;

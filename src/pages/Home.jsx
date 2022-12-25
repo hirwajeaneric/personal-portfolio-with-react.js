@@ -3,6 +3,7 @@ import NavigationBar from '../sections/NavigationBar';
 import {MainPageContainer} from '../components/MainPageContainer';
 import Banner from '../sections/Banner';
 import BestProjects from '../sections/BestProjects';
+import Footer from '../sections/Footer';
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
       <NavigationBar />
       <Banner />
       <BestProjects />
-      
+      <Footer/>
     </MainPageContainer>
   )
 }
