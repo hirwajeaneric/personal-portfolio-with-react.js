@@ -30,7 +30,7 @@ export const ProjectsSectionContainer = styled.section`
     } 
 `;
 
-export const ElementsContainer = styled.section`
+export const ElementsContainer = styled.div`
     dispay: flex;
     flex-direction: column;
     align-items: center;
@@ -241,9 +241,15 @@ export const ProjectsLinks = styled.div`
 `;
 
 export const MoreProjectsButton = styled(Link)`
-   padding: 1rem;
-   backgroundColor: #33bbff;
+   padding: 0.7rem 1rem;
+   text-decoration: none;
+   border: .14rem solid #004280;
    color: white;
    font-family: 'Space Mono', monospace;
    tex-align: center;
+   font-size: 1rem;
+
+   &:hover {
+    background: #004280;
+   }
 `;

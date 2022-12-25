@@ -68,9 +68,9 @@ const BestProjects = () => {
             </AProject> : '')
           )}
         </ProjectContainer>
-	<ButtonContainer>
-         <MoreProjectsButton to='/projects'>View More Works</MoreProjectsButton>
-	</ButtonContainer>
+        <ButtonContainer>
+              <MoreProjectsButton to='/projects'>View More Works</MoreProjectsButton>
+        </ButtonContainer>
       </ElementsContainer>
     </ProjectsSectionContainer>
   )
