@@ -8,10 +8,10 @@ const Footer = () => {
     <FooterSectionContainer>
       <ElementsContainer>
         <BottomNavigation>
-          <BottomNavigationItem>Home</BottomNavigationItem>
-          <BottomNavigationItem>About</BottomNavigationItem>
-          <BottomNavigationItem>Projects</BottomNavigationItem>
-          <BottomNavigationItem>Contact</BottomNavigationItem>
+          <BottomNavigationItem to={'/'}>Home</BottomNavigationItem>
+          <BottomNavigationItem to={'/about'}>About</BottomNavigationItem>
+          <BottomNavigationItem to={'/projects'}>Projects</BottomNavigationItem>
+          <BottomNavigationItem to={'/contact'}>Contact</BottomNavigationItem>
         </BottomNavigation>
         <SocialLinks>
           <ALink href='https://github.com/hirwajeaneric' target='_blank' rel="noreferrer">

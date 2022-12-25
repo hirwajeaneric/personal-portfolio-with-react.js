@@ -81,8 +81,13 @@ export const BottomNavigation = styled.div`
     } 
 `;
 
-export const BottomNavigationItem = styled.a`
-    color: white;
+export const BottomNavigationItem = styled(Link)`
+    color: #cce6ff;
+    text-decoration: none;
+
+    &:hover {
+        color: #33bbff;
+    }
 
     @media (min-width: 1920px) {
         
@@ -129,7 +134,11 @@ export const SocialLinks = styled.div`
 `;
 
 export const ALink = styled.a`
-    color: white;
+    color: #cce6ff;
+
+    &:hover {
+        color: #33bbff;
+    }
 
     @media (min-width: 1920px) {
         
