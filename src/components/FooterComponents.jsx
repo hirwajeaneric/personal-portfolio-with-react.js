@@ -8,7 +8,8 @@ export const FooterSectionContainer = styled.section`
     justify-content: center;
     width: 100%;
     font-size: 0.8em;
-    background: black;
+    // background: black;
+    background: #001a33;
     width: 100%;
     padding: 2rem 0rem;
 

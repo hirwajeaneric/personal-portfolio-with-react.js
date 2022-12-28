@@ -1,7 +1,7 @@
 import styled from 'styled-components'; 
 import { Link } from 'react-router-dom';
 
-export const ProjectsSectionContainer = styled.section`
+export const LightSectionContainer = styled.section`
     dispay: flex;
     flex-direction: column;
     align-items: center;
@@ -9,7 +9,6 @@ export const ProjectsSectionContainer = styled.section`
     width: 100%;
     font-size: 1.1em;
     background: #001a33;
-    width: 100%;
     padding: 2rem 0rem 6rem;
 
     @media (min-width: 1920px) {
@@ -116,7 +115,7 @@ export const ProjectContainer = styled.div`
     width: 100%;
 `;
 
-export const AProject = styled.div`
+export const TwoSidedComponent = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -141,6 +140,31 @@ export const AProject = styled.div`
 
     @media (max-width: 480px) {
         margin-bottom: 3rem;  
+    } 
+`;
+
+export const SimpleTwoSidedContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @media (min-width: 1920px) {
+        
+    }
+
+    @media (max-width: 1366px) {
+        
+    }
+
+    @media (max-width: 768px) {
+          
+    }
+
+    @media (max-width: 480px) {
+          
     } 
 `;
 

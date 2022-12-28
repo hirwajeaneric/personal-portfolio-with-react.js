@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { BiLink } from 'react-icons/bi';
 import { FaGithub } from 'react-icons/fa';
-import { AProject, DetailsSpace, ElementsContainer, ImageSpace, ProjectContainer, ProjectDescription, ProjectsLinks, ProjectsSectionContainer, ProjectTitle, ProjectType, SectionTagLine, SectionTitle, TechName, UsedTechnologies, MoreProjectsButton } from '../components/ProjectsComponents'
+import { DetailsSpace, ElementsContainer, ImageSpace, ProjectContainer, ProjectDescription, ProjectsLinks, LightSectionContainer, ProjectTitle, ProjectType, SectionTagLine, SectionTitle, TechName, UsedTechnologies, MoreProjectsButton, TwoSidedComponent } from '../components/ProjectsComponents'
 import { ButtonContainer } from '../components/BannerComponents';
 import myProjects from '../data/ProjectData';
 
@@ -24,7 +24,7 @@ const BestProjects = () => {
   };
 
   return (
-    <ProjectsSectionContainer>
+    <LightSectionContainer>
       <ElementsContainer>
         <SectionTitle>Some things I've built</SectionTitle>
         <SectionTagLine>
@@ -34,7 +34,7 @@ const BestProjects = () => {
         <ProjectContainer>
           {projects && projects.map((project, index) => (
 	    index < 2 ?
-            <AProject>
+            <TwoSidedComponent>
               <ImageSpace
                 href={`${project.repositoryLink}`} target='_blank' rel="noreferrer"
                 className='image-space'
@@ -64,14 +64,14 @@ const BestProjects = () => {
                   {project.previewLink && <a href={project.previewLink} target='_blank' rel="noreferrer"><BiLink /></a>}
                 </ProjectsLinks>
               </DetailsSpace>
-            </AProject> : '')
+            </TwoSidedComponent> : '')
           )}
         </ProjectContainer>
         <ButtonContainer style={{marginBottom: '2rem'}}>
               <MoreProjectsButton to='/projects'>View More Works</MoreProjectsButton>
         </ButtonContainer>
       </ElementsContainer>
-    </ProjectsSectionContainer>
+    </LightSectionContainer>
   )
 }
 

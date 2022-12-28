@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { BiLink } from 'react-icons/bi';
 import { FaGithub } from 'react-icons/fa';
-import { AProject, DetailsSpace, ElementsContainer, ImageSpace, ProjectContainer, ProjectDescription, ProjectsLinks, ProjectsSectionContainer, ProjectTitle, ProjectType, SectionTagLine, SectionTitle, TechName, UsedTechnologies, MoreProjectsButton } from '../components/ProjectsComponents'
+import { DetailsSpace, ElementsContainer, ImageSpace, ProjectContainer, ProjectDescription, ProjectsLinks, LightSectionContainer, ProjectTitle, ProjectType, SectionTagLine, SectionTitle, TechName, UsedTechnologies, MoreProjectsButton, TwoSidedComponent } from '../components/ProjectsComponents'
 import myProjects from '../data/ProjectData';
 
 const AllProjects = () => {
@@ -23,7 +23,7 @@ const AllProjects = () => {
   };
 
   return (
-    <ProjectsSectionContainer>
+    <LightSectionContainer>
       <ElementsContainer>
         <SectionTitle 
             style={{paddingTop: '3rem'}}
@@ -34,7 +34,7 @@ const AllProjects = () => {
         </SectionTagLine>
         <ProjectContainer>
           {projects && projects.map((project, index) =>
-            <AProject>
+            <TwoSidedComponent>
               <ImageSpace
                 href={`${project.repositoryLink}`} target='_blank' rel="noreferrer"
                 className='image-space'
@@ -64,11 +64,11 @@ const AllProjects = () => {
                   {project.previewLink && <a href={project.previewLink} target='_blank' rel="noreferrer"><BiLink /></a>}
                 </ProjectsLinks>
               </DetailsSpace>
-            </AProject>
+            </TwoSidedComponent>
           )}
         </ProjectContainer>
       </ElementsContainer>
-    </ProjectsSectionContainer>
+    </LightSectionContainer>
   )
 }
 

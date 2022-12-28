@@ -1,10 +1,10 @@
-
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const BannerContainer = styled.section`
     padding: 6em 0em;
-    background: black;
+    // background: black;
+    background: #001a33;
     dispay: flex;
     flex-direction: column;
     align-items: center;
@@ -109,11 +109,40 @@ export const AWordAboutMe = styled.p`
     width: 60%;
     text-align: center;
     line-height: 2rem;
-    margin: 4rem auto 2rem;
+    margin: 2rem auto 2rem;
 
     span {
         // color: #33bbff;
         // color: #cce6ff;
+        color: white;
+    }
+
+    @media (max-width: 1920px) {
+        // width: 50%;
+    }
+
+    @media (max-width: 1366px) {
+        // width: 50%;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
+    @media (max-width: 480px) {
+        
+    }
+`;
+
+export const AboutMeDescription = styled.p`
+    color: #79a6d2;
+    width: 50%;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.8rem;
+    margin: 2rem auto 1rem;
+
+    span {
         color: white;
     }
 
@@ -151,6 +180,7 @@ export const CallToActionButton = styled(Link)`
     padding: 1rem 1rem;
     font-size: 1rem;
     text-align: center;
+    margin-top: 2rem;
 
     &:hover {
         border-left: none;

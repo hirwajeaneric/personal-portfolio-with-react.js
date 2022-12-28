@@ -6,7 +6,8 @@ export const MainPageContainer = styled.main`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: black;
+    // background: black;
+    background: #001a33;
     width: 100%;
 
     @media (max-width: 1920px) {
