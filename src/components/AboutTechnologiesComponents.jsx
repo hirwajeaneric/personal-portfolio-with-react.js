@@ -31,7 +31,7 @@ export const AboutTechnologiesContainer = styled.section`
 
 export const LeftSide = styled.div`
     width: 50%;
-    color: #cce6ff;
+    color: #79a6d2;
     font-size: 1rem;
     line-height: 2rem;
 

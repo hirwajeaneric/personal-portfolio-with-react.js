@@ -10,7 +10,7 @@ const Techonogies = () => {
   return (
     <LightSectionContainer>
         <ElementsContainer>
-            <SectionTitle>Technologies that I use</SectionTitle>
+            <SectionTitle style={{color: "#cce6ff"}}>Technologies that I use</SectionTitle>
             <TwoSidedComponent style={{marginTop: '2rem'}}>
                 <LeftSide>
                     <p>I use a number of technologies, languages and software in my creation and development process:</p>
