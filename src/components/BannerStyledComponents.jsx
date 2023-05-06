@@ -3,13 +3,37 @@ import styled from 'styled-components';
 export const TopBar = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     width: 100%;
     position: sticky; 
     top: 0;
     background: black;
     padding: 20px 0;
+    z-index: 1000;
+
+    @media (min-width: 1920px) {
+        
+    }
+
+    @media (max-width: 1366px) {
+
+    }
+
+    @media (max-width: 768px) {
+        
+    }
+
+    @media (max-width: 480px) {
+        
+    }
+`;
+
+export const TopBarContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
     @media (min-width: 1920px) {
         
@@ -90,7 +114,7 @@ export const SelfIntro = styled.div`
     align-items: flex-start;
     width: 100%;
     font-size: 1rem;
-    margin-top: 30px;
+    margin-top: 0px;
 
     h1 {
         font-size: 7rem;
@@ -117,12 +141,15 @@ export const SelfIntro = styled.div`
         color: white;
         margin-top: 2rem;
         padding: 20px 0px;
-        width: 50%;
-        border-bottom: 2px solid white;
+        border-bottom: 1px solid white;
+        font-weight: 200;
+        font-size: 140%;
     }
 
     a:hover {
         font-weight: 800;
+        width: 50%;
+        border-bottom: 2px solid white;
     }
 
     @media (min-width: 1920px) {
