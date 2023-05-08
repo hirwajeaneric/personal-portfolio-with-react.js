@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet-async';
 import Banner from '../sections/Banner';
 import HomeProjects from '../sections/HomeProjects';
 import HomeContact from '../sections/HomeContact';
+import HomeProjectsIntro from '../sections/HomeProjectsIntro';
 
 export default function Home(){
   return (
@@ -15,9 +16,11 @@ export default function Home(){
       </Helmet>
 
       <Banner />
+      <HomeProjectsIntro />
       <HomeProjects />
       <HomeContact />
       <Footer />
+
     </MainPageContainer>
   )
 }

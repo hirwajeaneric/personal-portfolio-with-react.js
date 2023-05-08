@@ -22,7 +22,7 @@ export default function Main() {
 
       {/* Top Bar */}
       <TopBar>
-        <TopBarContainer style={{ maxWidth: '1300px', width: '85vw', marginRight: '90px', marginLeft: '90px' }}>
+        <TopBarContainer>
           <Logo>H</Logo>
           <MenuButton onClick={handleOpen}>menu</MenuButton>
         </TopBarContainer>

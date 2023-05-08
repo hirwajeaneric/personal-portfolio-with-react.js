@@ -5,7 +5,7 @@ export const TopBar = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
+    width: 100vw;
     position: sticky; 
     top: 0;
     background: black;
@@ -34,6 +34,8 @@ export const TopBarContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 1300px; 
+    width: 85vw; 
 
     @media (min-width: 1920px) {
         

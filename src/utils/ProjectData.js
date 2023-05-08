@@ -12,7 +12,7 @@ const projects = [
         previewLink: '',
         imageAddress: 'houseonline-8.png',
         alt: 'online-house-cost-sharing-system',
-	additionalImages: []
+	    additionalImages: []
     },
     {
         type: 'Web app',
@@ -26,13 +26,13 @@ const projects = [
         previewLink: '',
         imageAddress: 'mcms2.png',
         alt: 'MCMS',
-	additionalImages: [
-    	    'mcms1.png',
-	    'mcms2.png',
-	    'mcms3.png',
-	    'mcms4.png',
-	    'mcms5.png'
-	]
+        additionalImages: [
+                'mcms1.png',
+            'mcms2.png',
+            'mcms3.png',
+            'mcms4.png',
+            'mcms5.png'
+        ]
     },
     {
         type: 'Web app',
@@ -46,7 +46,8 @@ const projects = [
         repositoryLink: 'https://github.com/hirwajeaneric/online-house-cost-sharing-system',
         previewLink: '',
         imageAddress: 'https://github.com/hirwajeaneric/online-house-cost-sharing-system/blob/main/pictures/houseonline-8.png',
-        alt: 'online-house-cost-sharing-system'
+        alt: 'online-house-cost-sharing-system',
+        additionalImages: []
     },
     {
         type: 'Web app',
@@ -60,7 +61,8 @@ const projects = [
         repositoryLink: 'https://github.com/hirwajeaneric/online-house-cost-sharing-system',
         previewLink: '',
         imageAddress: 'https://github.com/hirwajeaneric/online-house-cost-sharing-system/blob/main/pictures/houseonline-8.png?raw=true',
-        alt: 'online-house-cost-sharing-system'
+        alt: 'online-house-cost-sharing-system',
+        additionalImages: []
     },
 ]
 

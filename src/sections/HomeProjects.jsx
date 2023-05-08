@@ -1,14 +1,11 @@
 import React from 'react'
-import { InnerContainer, SectionContainer } from '../components/GeneralStyledComponents'
+import { SectionContainer } from '../components/GeneralStyledComponents'
 
-const HomeProjects = () => {
+
+export default function HomeProjects() {
   return (
     <SectionContainer style={{ background: 'white'}}>
-      <InnerContainer style={{ maxWidth: '1300px', width: '85vw', }}>
-        <h2>My Work</h2>
-      </InnerContainer>
+      
     </SectionContainer>
   )
 }
-
-export default HomeProjects
