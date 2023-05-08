@@ -56,7 +56,6 @@ export const SectionContainer = styled.section`
 `;
 
 export const BannerSectionContainer = styled.section` 
-    width: 100%;
     margin-bottom: 6rem;
     display: flex;
     flex-direction: column;
@@ -113,7 +112,8 @@ export const InnerContainer = styled.div`
     }
 
     @media (max-width: 768px) {
-        min-height: 300px;
+        min-height: 250px;
+        margin-top: 40px; 
 
         div {
             width: 100%;
