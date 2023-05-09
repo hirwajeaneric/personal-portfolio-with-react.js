@@ -28,6 +28,7 @@ export const AProject = styled.div`
 
 export const ImageContainer = styled.div`
     width: 60%;
+    height: auto;
     border: 2px solid gray;
 
     img {

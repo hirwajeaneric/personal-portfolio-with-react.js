@@ -47,7 +47,7 @@ export const SectionContainer = styled.section`
     }
 
     @media (max-width: 768px) {
-        
+        flex-wrap: wrap;
     }
 
     @media (max-width: 480px) {
@@ -130,8 +130,14 @@ export const InnerContainer = styled.div`
     }
 `;
 
-export const D = styled.section`
-    
+export const InnerContainerTwo = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 1300px;
+    width: 85vw;
 
     @media (min-width: 1920px) {
         
@@ -142,16 +148,30 @@ export const D = styled.section`
     }
 
     @media (max-width: 768px) {
-        
+        // margin-top: 4rem; 
+        flex-wrap: wrap;
+
+        div {
+            width: 100%;
+        }
     }
 
     @media (max-width: 480px) {
-        
+
     }
 `;
 
-export const E = styled.section`
-    
+
+export const RightSide = styled.div`
+    width: 50%;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
 
     @media (min-width: 1920px) {
         
@@ -162,7 +182,7 @@ export const E = styled.section`
     }
 
     @media (max-width: 768px) {
-        
+        width: 100%;
     }
 
     @media (max-width: 480px) {
@@ -170,7 +190,28 @@ export const E = styled.section`
     }
 `;
 
-export const F = styled.section`
+export const LeftSide = styled.div`
+    width: 50%;
+
+    @media (min-width: 1920px) {
+        
+    }
+
+    @media (max-width: 1366px) {
+
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
+    @media (max-width: 480px) {
+        
+    }
+`;
+
+export const SectionHeader = styled.section`
+    font-size: 3em;
     
 
     @media (min-width: 1920px) {
