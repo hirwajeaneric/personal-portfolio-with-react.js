@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const AProject = styled.div`
@@ -9,7 +10,7 @@ export const AProject = styled.div`
     margin-bottom: 6rem;
 
     @media (min-width: 1920px) {
-        
+        justify-content: flex-end;
     }
 
     @media (max-width: 1366px) {
@@ -25,12 +26,16 @@ export const AProject = styled.div`
     }
 `;
 
-export const ImageContainer = styled.img`
+export const ImageContainer = styled.div`
     width: 60%;
     border: 2px solid gray;
 
+    img {
+        width: 100%;
+    }
+
     @media (min-width: 1920px) {
-        
+        width: 40%;
     }
 
     @media (max-width: 1366px) {
@@ -49,6 +54,7 @@ export const ImageContainer = styled.img`
 
 export const ProjectDescription = styled.div`
     color: black;
+    width: 40%;
 
     p {
         font-size: 90%;
@@ -91,7 +97,7 @@ export const ProjectDescription = styled.div`
         }    
 
         a {
-            margin: 0 0 0 20px; 
+            margin: 0 0 0 2rem; 
         }
     }
 
@@ -141,8 +147,24 @@ export const ProjectTitle = styled.div`
     }
 `;
 
-export const E = styled.div`
-    
+export const ViewMoreContainer = styled.div`
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+
+    span {
+        width: 60%;
+    }
+
+    div {
+        width: 40%;
+
+        a {
+            margin: 0 0 0 2rem;
+        }
+    }
 
     @media (min-width: 1920px) {
         
@@ -153,7 +175,11 @@ export const E = styled.div`
     }
 
     @media (max-width: 768px) {
-        
+        flex-wrap: wrap;
+
+        span, div {
+            width: 100%;
+        }
     }
 
     @media (max-width: 480px) {
@@ -161,8 +187,19 @@ export const E = styled.div`
     }
 `;
 
-export const F = styled.div`
-    
+export const ViewMoreButton = styled(Link)`
+    text-decoration: none;
+    color: black;
+    padding: 20px 0px;
+    border-bottom: 1px solid black;
+    font-weight: 200;
+    font-size: 140%;
+
+    &:hover {
+        font-weight: 800;
+        width: 100%;x
+        border-bottom: 4px solid black;
+    }
 
     @media (min-width: 1920px) {
         

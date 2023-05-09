@@ -1,6 +1,6 @@
 import React from 'react'
 import { SectionContainer } from '../components/GeneralStyledComponents'
-import { AProject, ImageContainer, ProjectDescription, ProjectTitle } from '../components/ProjectsStyledComponents'
+import { AProject, ImageContainer, ProjectDescription, ProjectTitle, ViewMoreButton, ViewMoreContainer } from '../components/ProjectsStyledComponents'
 import ProjectData from '../utils/ProjectData';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +9,9 @@ export default function HomeProjects() {
     <SectionContainer style={{ background: '#e0e0eb'}}>
       {ProjectData && ProjectData.map((project, index) => (
         <AProject key={index}>
-          <ImageContainer src={project.imageAddress} alt={project.alt}/>
+          <ImageContainer>
+            <img src={project.imageAddress} alt={project.alt}/> 
+          </ImageContainer>
           <ProjectDescription>
             <ProjectTitle>
               <h3>{"0"+(index+1)}</h3>
@@ -20,7 +22,12 @@ export default function HomeProjects() {
           </ProjectDescription>
         </AProject>
       ))}
-      
+      <ViewMoreContainer>
+        <span></span>
+        <div>
+          <ViewMoreButton to={'projects'}>More Projects  &nbsp;❱❱</ViewMoreButton>
+        </div>
+      </ViewMoreContainer>
     </SectionContainer>
   )
 }

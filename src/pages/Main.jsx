@@ -36,10 +36,10 @@ export default function Main() {
           <Box sx={PopupBoxStyles}>
             <Menu>
               <MenuContainer>
-                <NavLink to={'/'}>Home</NavLink>
-                <NavLink to={'/about'}>About Me</NavLink>
-                <NavLink to={'/projects'}>My projects</NavLink>
-                <NavLink to={'/contact'}>Let's get in touch</NavLink>
+                <NavLink to={'/'} onClick={handleClose}>Home</NavLink>
+                <NavLink to={'/about'} onClick={handleClose}>About Me</NavLink>
+                <NavLink to={'/projects'} onClick={handleClose}>My projects</NavLink>
+                <NavLink to={'/contact'} onClick={handleClose}>Let's get in touch</NavLink>
               </MenuContainer>
               <SocialMedia>
                 <a href={'https://www.instagram.com/hirwa_jean_eric'}>Instagram</a>
